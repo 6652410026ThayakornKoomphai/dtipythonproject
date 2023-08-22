@@ -1,0 +1,20 @@
+#รับค่า คือ หยุดให้ user ป้อนทางแป้นพิมพ์
+#variable (ตัวแปร)
+
+#การแปลงข้อมูล (casting/type conversion) --> str( ) , int( ) , float( )
+
+stu_id = input("ป้อน STUDENT ID: ")
+stu_name = input("ป้อน STUDENT Name: ")
+stu_birth_year = int(input("ป้อน STUDENT Birth Year: "))
+print("------------------------------------------")
+print("ยินดีต้อนรับ {stu_id} {stu_name} สู่ SAU")
+print("คุณเกิดปี {stu_birth_year} แปลว่าคุณอายุ {2023 - stu_birth_year} ปี")
+print("ใช้ ,------------------------------------------")
+print("ยินดีต้อนรับ" ,stu_id, stu_name, "สู่ SAU")
+print("คุณเกิดปี" ,stu_birth_year, "แปลว่าคุณอายุ" ,2023 - int(stu_birth_year), "ปี")
+print("ใช้ +------------------------------------------")
+print("ยินดีต้อนรับ "+stu_id+" "+stu_name+" สู่ SAU")
+print("คุณเกิดปี "+stu_birth_year+" แปลว่าคุณอายุ "+{2023 - int(stu_birth_year)}+" ปี")
+print("ใช้เมธอด format------------------------------------------")
+print("ยินดีต้อนรับ {} {} สู่ SAU" .format(stu_id,stu_name))
+print("คุณเกิดปี {} แปลว่าคุณอายุ {} ปี") .format(stu_birth_year, 2023 - int(stu_birth_year))
